@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">UTS1 Mobile Radit</string>
+    <string name="keluar">Keluar</string>
+    <string name="nama">Budi Suharjo</string>
+    <string name="welcome">Welcome To My App</string>
+    <string name="name">Nama :</string>
+    <string name="input_name">Enter Your Name</string>
+    <string name="submit">Submit</string>
+    <string name="cancel">Cancel</string>
+    <string name="username">Username :</string>
+    <string name="input_username">Enter Your Username</string>
+    <string name="password">Password :</string>
+    <string name="iput_password">Enter Your Password</string>
+    <string name="login">Login</string>
+</resources>

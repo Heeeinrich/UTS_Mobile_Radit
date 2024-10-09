@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/welcomeApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ImageView
+        android:id="@+id/img_second"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/imageperson"
+        android:layout_below="@id/welcomeApp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/box_name"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/input_name"
+        android:layout_marginTop="5dp"
+        app:boxCornerRadiusBottomEnd="7dp"
+        app:boxCornerRadiusBottomStart="7dp"
+        app:boxCornerRadiusTopEnd="7dp"
+        app:boxCornerRadiusTopStart="7dp"
+        app:boxStrokeColor="@color/black"
+        app:boxStrokeWidth="1dp"
+        android:layout_below="@id/img_second"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ipt_name"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:backgroundTint="@color/teal"
+        android:layout_alignStart="@id/img_second"
+        android:layout_below="@id/box_name"
+        android:layout_marginTop="16dp"
+        app:cornerRadius="10dp"/>
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        android:backgroundTint="@color/teal"
+        android:layout_below="@id/box_name"
+        android:layout_alignEnd="@id/img_second"
+        android:layout_marginTop="16dp"
+        app:cornerRadius="10dp"/>
+
+</RelativeLayout>
